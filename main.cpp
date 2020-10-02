@@ -41,11 +41,13 @@ int main() {
     while (comp_choice == choice) {
       comp_choice = rand() % 3 + 1;
     }
+    // std::cout << comp_choice;
+    // std::cout << "!!!!!!!!!!!!!!!!!!";
 
     std::string comp_choice_name;
     if (comp_choice == 1) {
       comp_choice_name = "Rock";
-    } else if (choice == 2) {
+    } else if (comp_choice == 2) {
       comp_choice_name = "Paper";
     } else {
       comp_choice_name = "Scissor";
@@ -59,7 +61,7 @@ int main() {
     if((choice == 1 && comp_choice == 2) ||
       (choice == 2 && comp_choice ==1 ))
       {
-        std::cout << "Paper wins => \n";
+        std::cout << "Paper wins!!!! \n";
         result = "Paper";
       }
     else if((choice == 1 && comp_choice == 3) ||
